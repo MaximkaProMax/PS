@@ -9,3 +9,5 @@ C:\Users\Max\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFor
 C:\Users\Max\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\Max\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\Max\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.asa-TZ.resources
+C:\Users\Max\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\asa-TZ\WindowsFormsApp1.resources.dll
+C:\Users\Max\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\asa-TZ\WindowsFormsApp1.resources.dll

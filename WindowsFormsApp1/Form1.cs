@@ -21,39 +21,6 @@ namespace WindowsFormsApp1
             this.password.Size = new Size(this.password.Size.Width, 25); //Высота поля
         }
 
-        private void RoundedForm_Shown(object sender, EventArgs e)
-        {
-            RoundCorners();
-        }
-
-        private void RoundCorners()
-        {
-            int cornerRadius = 10; // Задайте радиус закругления углов
-
-            // Создание прямоугольника для каждого угла
-            Rectangle topLeft = new Rectangle(0, 0, cornerRadius, cornerRadius);
-            Rectangle topRight = new Rectangle(Width - cornerRadius, 0, cornerRadius, cornerRadius);
-            Rectangle bottomLeft = new Rectangle(0, Height - cornerRadius, cornerRadius, cornerRadius);
-            Rectangle bottomRight = new Rectangle(Width - cornerRadius, Height - cornerRadius, cornerRadius, cornerRadius);
-
-            // Создание GraphicsPath для каждого угла
-            GraphicsPath topLeftPath = new GraphicsPath();
-            topLeftPath.AddArc(topLeft, 180, 90);
-            GraphicsPath topRightPath = new GraphicsPath();
-            topRightPath.AddArc(topRight, 270, 90);
-            GraphicsPath bottomLeftPath = new GraphicsPath();
-            bottomLeftPath.AddArc(bottomLeft, 0, 90);
-            GraphicsPath bottomRightPath = new GraphicsPath();
-            bottomRightPath.AddArc(bottomRight, 90, 90);
-
-            // Добавление GraphicsPath к форме
-            this.Region = new Region(new GraphicsPath(GraphicsPathType.Path));
-            this.Region.Combine(topLeftPath, Intersection);
-            this.Region.Combine(topRightPath, Union);
-            this.Region.Combine(bottomLeftPath, Intersection);
-            this.Region.Combine(bottomRightPath, Union);
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
 
