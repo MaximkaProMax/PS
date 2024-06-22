@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient; //Библиотека клиента SQL
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -79,6 +80,34 @@ namespace WindowsFormsApp1
         {
             // Сохраняем координаты курсора мыши
             lastPoint = new Point(e.X, e.Y);
+        }
+
+        private void butlog_Click(object sender, EventArgs e)
+        {
+            String loguser = login.Text; //Записываем лог
+            String passuser = password.Text; //Записываем пароль
+
+            DB db = new DB(); //Работаем с БД
+
+            DataTable table = new DataTable();
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `login` = @ul AND `pass` = @up", db.getConnection()); //Новая команда на яз SQL, выбрать лог и пароль (WPF данные == SQL данные) (@заглушка)
+            
+            command.Parameters.Add("@ul", MySqlDbType.VarChar).Value = login; //Внутри заглушки переменная (Тип данных VarChar, и далее самое значение login)
+            command.Parameters.Add("@up", MySqlDbType.VarChar).Value = password; //Внутри заглушки переменная (Тип данных VarChar, и далее самое значение password)
+
+            adapter.SelectCommand = command; //Выбрать команду
+            adapter.Fill(table); //Сформировать массив данных (Сколько элементов/записей)
+
+            if (table.Rows.Count > 0) //Если рядов больше 0, то пользователь есть, авторизация
+            {
+                MessageBox.Show("Вошел"); //Вывести сообщение
+            }
+
+            else //Иначе
+                MessageBox.Show("Не вошел");
         }
     }
 }

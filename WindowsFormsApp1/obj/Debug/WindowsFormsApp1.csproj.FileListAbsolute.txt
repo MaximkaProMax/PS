@@ -11,3 +11,10 @@ C:\Users\Max\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFor
 C:\Users\Max\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.asa-TZ.resources
 C:\Users\Max\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\asa-TZ\WindowsFormsApp1.resources.dll
 C:\Users\Max\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\asa-TZ\WindowsFormsApp1.resources.dll
+C:\Users\Max\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\MySql.Data.dll
+C:\Users\Max\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Memory.dll
+C:\Users\Max\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Max\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Max\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Buffers.dll
+C:\Users\Max\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\MySql.Data.xml
+C:\Users\Max\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsF.A1EEDF9B.Up2Date

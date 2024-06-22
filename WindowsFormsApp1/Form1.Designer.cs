@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.butlog = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.password = new System.Windows.Forms.TextBox();
@@ -48,7 +48,7 @@
             // 
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.butlog);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.password);
@@ -59,12 +59,13 @@
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             // 
-            // button1
+            // butlog
             // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.butlog, "butlog");
+            this.butlog.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.butlog.Name = "butlog";
+            this.butlog.UseVisualStyleBackColor = true;
+            this.butlog.Click += new System.EventHandler(this.butlog_Click);
             // 
             // label4
             // 
@@ -150,6 +151,6 @@
         private System.Windows.Forms.TextBox password;
         private System.Windows.Forms.TextBox login;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button butlog;
     }
 }
