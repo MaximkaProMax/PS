@@ -46,7 +46,6 @@
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
             this.panel1.Controls.Add(this.butlog);
             this.panel1.Controls.Add(this.label4);
@@ -54,6 +53,7 @@
             this.panel1.Controls.Add(this.password);
             this.panel1.Controls.Add(this.login);
             this.panel1.Controls.Add(this.panel2);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
@@ -61,8 +61,8 @@
             // 
             // butlog
             // 
-            resources.ApplyResources(this.butlog, "butlog");
             this.butlog.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.butlog, "butlog");
             this.butlog.Name = "butlog";
             this.butlog.UseVisualStyleBackColor = true;
             this.butlog.Click += new System.EventHandler(this.butlog_Click);
@@ -93,11 +93,11 @@
             // 
             // panel2
             // 
-            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
+            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
             // 
             // pictureBox1
