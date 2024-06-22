@@ -95,8 +95,8 @@ namespace WindowsFormsApp1
 
             MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `login` = @ul AND `pass` = @up", db.getConnection()); //Новая команда на яз SQL, выбрать лог и пароль (WPF данные == SQL данные) (@заглушка)
             
-            command.Parameters.Add("@ul", MySqlDbType.VarChar).Value = login; //Внутри заглушки переменная (Тип данных VarChar, и далее самое значение login)
-            command.Parameters.Add("@up", MySqlDbType.VarChar).Value = password; //Внутри заглушки переменная (Тип данных VarChar, и далее самое значение password)
+            command.Parameters.Add("@ul", MySqlDbType.VarChar).Value = loguser; //Внутри заглушки переменная (Тип данных VarChar, и далее самое значение login)
+            command.Parameters.Add("@up", MySqlDbType.VarChar).Value = passuser; //Внутри заглушки переменная (Тип данных VarChar, и далее самое значение password)
 
             adapter.SelectCommand = command; //Выбрать команду
             adapter.Fill(table); //Сформировать массив данных (Сколько элементов/записей)
