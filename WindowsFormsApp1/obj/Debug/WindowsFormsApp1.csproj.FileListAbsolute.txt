@@ -18,3 +18,4 @@ C:\Users\Max\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Num
 C:\Users\Max\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Buffers.dll
 C:\Users\Max\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\MySql.Data.xml
 C:\Users\Max\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsF.A1EEDF9B.Up2Date
+C:\Users\Max\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form2.resources
