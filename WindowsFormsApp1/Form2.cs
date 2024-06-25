@@ -15,6 +15,11 @@ namespace WindowsFormsApp1
         public Form2()
         {
             InitializeComponent();
+            this.password.AutoSize = false; //Выключить авто высоту и ширину
+            this.password.Size = new Size(this.password.Size.Width, 25); //Высота поля
+
+            login.Text = "Введите имя";
+            login.ForeColor = Color.Gray;
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -35,6 +40,24 @@ namespace WindowsFormsApp1
             {
                 this.Left += e.X - lastPoint.X;
                 this.Top += e.Y - lastPoint.Y;
+            }
+        }
+
+        private void login_Enter(object sender, EventArgs e)
+        {
+            if (login.Text == "Введите имя")
+            {
+                login.Text = "";
+                login.ForeColor = Color.Black;
+            }
+        }
+
+        private void login_Leave(object sender, EventArgs e)
+        {
+            if (login.Text == "")
+            { 
+                login.Text = "Введите имя";
+                login.ForeColor = Color.Gray;
             }
         }
     }
